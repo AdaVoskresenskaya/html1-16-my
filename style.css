@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "DIN Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/DINPro.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DIN Pro bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/DINPro-Bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DIN Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/DINPro-CondensedBold.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    margin: 0;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 27px;
+    color: #2F2E3E;
+    min-width: 1920px;
+    background-color: #f8f9fb;
+    height: 100%;
+}
+
+.page-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 1920px;
+}
+
+.about {
+    padding-left: 38px;
+    margin-left: 196px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    box-sizing: border-box;
+    width: 1532px;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: 714px 645px;
+    gap: 50px;
+}
+
+.section-title {
+    padding: 0;
+    padding-left: 22px;
+    margin: 0;
+    font-family: "DIN Pro bold";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #0055B9;
+    margin-bottom: 30px;
+    position: relative;
+    letter-spacing: 0.02em;
+}
+
+.section-title::before {
+    content: "";
+    border-left: 12px solid transparent;
+    border-bottom: 12px solid #FF0000;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+}
+
+
+.about-caption {
+    margin: 0;
+    padding: 0;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46.2px;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.about-caption::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 95%;
+    top: 5px;
+    background-color: #ff0000;
+    left: -38px;
+}
+
+
+.about-description {
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+}
+
+.more-link {
+    text-decoration: none;
+    font-family: "DIN Pro bold";
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #2f2e3e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+    position: relative;
+    padding: 9px 33px 9px 2px;
+    transition: transform 0.5s;
+}
+
+.more-link-icon {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #b9c8d2;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    transition: transform 0.5s;
+    right: 0;
+}
+
+.more-link-icon svg {
+    padding: 5px 7px 6px 8px;
+}
+
+.more-link:hover .more-link-icon {
+    transition: transform 0.5s;
+    transform: translateX(2px);
+}
+
+.more-link-icon:hover {
+    transition: transform 0.5s;
+    transform: translateX(2px);
+}
+
+.vacancy {
+    width: 1532px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    padding-left: 38px;
+    box-sizing: border-box;
+}
+
+.vacancy-title {
+    margin-bottom: 17px;
+}
+
+.vacancy-info {
+    display: grid;
+    grid-template-columns: 654px 766px;
+    gap: 72px;
+}
+
+.vacancy-caption {
+    margin: 0;
+    padding: 0;
+    font-family: "DIN Pro", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46.2px;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.vacancy-caption::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 95%;
+    top: 5px;
+    background-color: #ff0000;
+    left: -38px;
+}
+
+.vacancy-description {
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+.vacancy-image-container {
+    position: relative;
+    padding-top: 5px;
+}
+
+.vacancy-image {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    border-left: 73px solid #f8f9fb;
+    border-top: 73px solid transparent;
+    left: 0;
+}
